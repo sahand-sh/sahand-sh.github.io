@@ -1,8 +1,27 @@
+@font-face {
+    font-family: 'nassim';
+    src: url('/assets/fonts/nassim.eot');
+    src: url('/assets/fonts/nassim.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/nassim.woff') format('woff'), url('/assets/fonts/nassim.ttf') format('truetype'), url('/assets/fonts/nassim.svg#NasimRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'gothic';
+    src: url('/assets/fonts/gothic.eot?') format('eot'), url('/assets/fonts/gothic.otf') format('opentype'), url('/assets/fonts/gothic.woff') format('woff');
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	background-color: $body-color;
+}
+
+.nassim {
+    font-family: 'mohitNassim' !important;
+}
+
+.gothicl {
+    font-family: 'gothic' !important;
 }
 
 // Main
@@ -407,9 +426,12 @@ header .entry-meta {
 // --------------------------------------------------
 .footer-wrapper {
 	@include clearfix;
-	margin: 2em auto;
+	margin: 0 auto;
+	padding: 2em 0;
 	text-align: center;
-	color: lighten($text-color,20);
+	color: rgba(255, 242, 242, 0.81);
+	background-color: #212121;
+	line-height: 2;
 	a {
 		color: lighten($text-color,20);
 	}
